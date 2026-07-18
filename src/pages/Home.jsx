@@ -76,7 +76,6 @@ export default function Home() {
               <Link to="/contact" className="btn ghost">Check Availability</Link>
             </div>
           </div>
-
           <div className="hero-booking-card">
             <div className="booking-header">
               <span>BOOK YOUR STAY</span>
