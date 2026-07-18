@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffd9d9"/>
+      <stop offset="1" stop-color="#ffd9f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g1)" rx="12"/>
+  <g fill="#4b2b6d" font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="120" font-size="48" font-weight="700">Executive Suite</text>
+    <rect x="60" y="160" width="360" height="220" rx="10" fill="#ffffff" opacity="0.85" />
+    <text x="80" y="210" font-size="20">King bed • Lounge • City view</text>
+  </g>
+</svg>
