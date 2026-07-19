@@ -17,10 +17,18 @@ export default function Gallery() {
           <p>Browse our curated gallery of breathtaking spaces and unforgettable moments.</p>
         </div>
       </section>
-      <section className="container gallery-grid">
+      <section className="container gallery-grid gallery-grid-large">
         {galleryImages.map((image, index) => (
-          <div key={index} className="gallery-card" style={{ backgroundImage: `url(${image})` }} />
+          <div key={index} className="gallery-card gallery-card-large" style={{ backgroundImage: `url(${image})` }} />
         ))}
+      </section>
+      <section className="container contact-showcase-grid">
+        <div className="gallery-card contact-card" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1494508606163-121e88d50a86?auto=format&fit=crop&w=1200&q=80)' }}>
+          <div className="image-card-overlay"><h3>Luxury events</h3></div>
+        </div>
+        <div className="gallery-card contact-card" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80)' }}>
+          <div className="image-card-overlay"><h3>Timeless celebration spaces</h3></div>
+        </div>
       </section>
     </main>
   )

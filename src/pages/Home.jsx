@@ -56,9 +56,9 @@ const rollingRooms = [
     rate: '$280/night',
     image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80',
   },
-]
+ ]
 
-export default function Home() {
+ export default function Home() {
   return (
     <main>
       <section className="hero-section">
@@ -131,7 +131,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="container intro-section">
         <div className="intro-copy">
           <span className="eyebrow">Royal Grandeur</span>
@@ -140,9 +139,10 @@ export default function Home() {
             Our hotel offers magnificent rooms, exclusive dining, rejuvenating spa experiences,
             and elegant event spaces designed to impress.
           </p>
-        </div>
-        <div className="intro-stats">
-          <div>
+
+          </div>
+          <div className="intro-stats">
+         <div>
             <strong>5 Star</strong>
             <span>Hospitality rating</span>
           </div>
@@ -156,7 +156,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="container feature-section">
         <div className="section-head">
           <span className="eyebrow">Signature Services</span>

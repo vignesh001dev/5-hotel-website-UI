@@ -6,7 +6,6 @@ export default function ImageUploader({ rooms, setRooms }) {
     const url = URL.createObjectURL(file)
     setRooms((prev) => prev.map((r, i) => (i === index ? { ...r, image: url } : r)))
   }
-
   return (
     <div className="uploader">
       <small>Replace room images (local preview only)</small>

@@ -20,6 +20,15 @@ export default function Spa() {
           </div>
         </div>
       </section>
+
+      <section className="container spa-experience-grid">
+        <div className="image-card spa-card" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80)' }}>
+          <div className="image-card-overlay"><h3>Private spa suites</h3></div>
+        </div>
+        <div className="image-card spa-card" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80)' }}>
+          <div className="image-card-overlay"><h3>Rejuvenating rituals</h3></div>
+        </div>
+      </section>
     </main>
   )
 }
