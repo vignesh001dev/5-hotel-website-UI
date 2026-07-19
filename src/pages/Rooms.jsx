@@ -19,6 +19,12 @@ const rooms = [
     description: 'Spacious room with premium bath and balcony.',
     image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=80',
   },
+  {
+    name: 'Deluxe Double',
+    price: '$320/night',
+    description: 'Spacious room with premium bath and balcony.',
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=1200&q=80',
+  },
 ]
 
 export default function Rooms() {

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import BookingSection from '../components/BookingSection'
 
 const featureCards = [
   {
@@ -56,6 +57,12 @@ const rollingRooms = [
     rate: '$280/night',
     image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=900&q=80',
   },
+  {
+    name: 'Garden View Room',
+    details: 'Serene garden view with modern amenities',
+    rate: '$350/night',
+    image: 'https://images.unsplash.com/photo-1520631892601-fca69fc7e158?auto=format&fit=crop&w=900&q=80',
+  },
  ]
 
  export default function Home() {
@@ -76,61 +83,9 @@ const rollingRooms = [
               <Link to="/contact" className="btn ghost">Check Availability</Link>
             </div>
           </div>
-          <div className="hero-booking-card">
-            <div className="booking-header">
-              <span>BOOK YOUR STAY</span>
-              <h2>Reserve a room in seconds</h2>
-            </div>
-            <div className="booking-grid">
-              <label>
-                Check In
-                <input type="date" />
-              </label>
-              <label>
-                Check Out
-                <input type="date" />
-              </label>
-              <label>
-                Guests
-                <select>
-                  <option>1 Guest</option>
-                  <option>2 Guests</option>
-                  <option>3 Guests</option>
-                </select>
-              </label>
-              <label>
-                Rooms
-                <select>
-                  <option>1 Room</option>
-                  <option>2 Rooms</option>
-                  <option>3 Rooms</option>
-                </select>
-              </label>
-            </div>
-            <div className="room-scroll-section">
-              <div className="room-scroll-header">
-                <div>
-                  <p className="eyebrow">Available Rooms</p>
-                  <h3>Scroll through our premium room options.</h3>
-                </div>
-              </div>
-              <div className="room-scroll-list">
-                {rollingRooms.map((room) => (
-                  <div key={room.name} className="room-scroll-card room-scroll-image-card" style={{ backgroundImage: `url(${room.image})` }}>
-                    <div className="room-scroll-card-overlay" />
-                    <div className="room-scroll-card-text">
-                      <strong>{room.name}</strong>
-                      <p>{room.details}</p>
-                      <span>{room.rate}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <Link to="/contact" className="btn primary full">Check Availability</Link>
-          </div>
         </div>
       </section>
+      <BookingSection />
       <section className="container intro-section">
         <div className="intro-copy">
           <span className="eyebrow">Royal Grandeur</span>

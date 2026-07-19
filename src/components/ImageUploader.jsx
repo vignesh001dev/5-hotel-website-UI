@@ -10,7 +10,7 @@ export default function ImageUploader({ rooms, setRooms }) {
     <div className="uploader">
       <small>Replace room images (local preview only)</small>
       <div className="uploader-list">
-        {rooms.map((r, idx) => (
+        {rooms.map((r,  idx) => (
           <label className="uploader-item" key={r.id}>
             <img src={r.image} alt={r.name} className="uploader-thumb" />
             <input
